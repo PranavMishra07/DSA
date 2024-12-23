@@ -52,6 +52,7 @@ int main(){
 	cout<<"\nDelete Top Element of the Stack : "<<pop();
 	cout<<"\nDelete Top Element of the Stack : "<<pop();
 	cout<<"\nDelete Top Element of the Stack : "<<pop();
+	//stack is Empty
 	cout<<"\nDelete Top Element of the Stack : "<<pop();
 	
 
