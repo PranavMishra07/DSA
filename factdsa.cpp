@@ -31,48 +31,68 @@
 //cout<<"\nFactorial of Number Is :"<<fact(n);
 //	
 //}
-#include <iostream>
-
+//#include <iostream>
+//
+//using namespace std;
+//
+//class Parent{
+//public:
+//virtual void display(){//Virtual Function
+//cout<<"\nThis is Parent Class Display Method";
+//
+//}
+//
+//};
+//
+//class Derived: public Parent{
+//public:
+//void display(){
+//cout<<"\nThis is Derived Class Display Method";
+//
+//}
+//
+//};
+//class Derived1: public Parent{
+//public:
+//void display(){
+//
+//cout<<"\nThis is Derived1 class Display Method";
+//
+//}
+//
+//};
+//
+//int main(){
+//Parent *p1;//Base class Pointer:
+//
+//Derived obj1;
+//p1=&obj1;//Initilized Base class Pointer to Derived class Reference
+//
+//p1->display();
+//Derived1 obj2;
+//p1=&obj2;//Initilized Base class Pointer to Derived1 class Reference
+//
+//p1->display();
+//
+//return 0;
+//}
+#include<iostream>
+#include<fstream>
 using namespace std;
-
-class Parent{
-public:
-virtual void display(){//Virtual Function
-cout<<"\nThis is Parent Class Display Method";
-
-}
-
-};
-
-class Derived: public Parent{
-public:
-void display(){
-cout<<"\nThis is Derived Class Display Method";
-
-}
-
-};
-class Derived1: public Parent{
-public:
-void display(){
-
-cout<<"\nThis is Derived1 class Display Method";
-
-}
-
-};
-
 int main(){
-Parent *p1;//Base class Pointer:
+	string s;
+	cout<<"\nReading Data From The File : \n";
+	ifstream obj("thursday.txt",ios::in);
+    while(getline(obj,s)){
+    	cout<<s;
+	}
+	obj.close();
+	return 0;
+	//ios :: app ===> file open in append mode 
+	//ios :: in ===> file open in Reading mode 
+	//ios :: out ===> file open in Write mode 
+	
 
-Derived obj1;
-p1=&obj1;//Initilized Base class Pointer to Derived class Reference
 
-p1->display();
-Derived1 obj2;
-p1=&obj2;//Initilized Base class Pointer to Derived1 class Reference
-
-p1->display();
-
-return 0;
 }
+
