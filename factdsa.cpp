@@ -76,23 +76,5 @@
 //
 //return 0;
 //}
-#include<iostream>
-#include<fstream>
-using namespace std;
-int main(){
-	string s;
-	cout<<"\nReading Data From The File : \n";
-	ifstream obj("thursday.txt",ios::in);
-    while(getline(obj,s)){
-    	cout<<s;
-	}
-	obj.close();
-	return 0;
-	//ios :: app ===> file open in append mode 
-	//ios :: in ===> file open in Reading mode 
-	//ios :: out ===> file open in Write mode 
-	
 
-
-}
 
