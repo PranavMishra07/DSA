@@ -7,7 +7,7 @@ class Node{
 	Node(int data){
 		this->data=data;
 		next=NULL;
-		cout<<"\nNode created";
+		cout<<"\nNode created\n";
 	}
 };
 void display(Node *head){
@@ -16,6 +16,19 @@ void display(Node *head){
 		cout<<"==>"<<temp->data;
 		temp=temp->next;
 	}
+}
+Node*addNodeAtStart(Node*head,int data){
+	Node*newNode=new Node(data);
+	if(head==NULL){
+		head=newNode;
+	}
+	else{
+		newNode->next=head;
+		head=newNode;
+	}
+		cout<<"\nNode added Success at the Start of the Singly linked List\n";
+
+	return head;
 }
 //Add New Node at the last of the linked list
 Node*addAtLast(Node *head,int data){
@@ -44,9 +57,13 @@ int main(){
 	head->next->next->next=fourth;
 	cout<<"\nData of Singly Linked List\n";
 	display(head);
+	head=addNodeAtStart(head,5);
+	cout<<"\nPrint Data Singly Linked After Add New Node At the Start of the Linked List\n";
+	display(head);
 	head=addAtLast(head,50);
 	cout<<"\nPrint Data Singly Linked After Add New Node At the End of the Linked List\n";
 	display(head);
+
 	
 }
 
