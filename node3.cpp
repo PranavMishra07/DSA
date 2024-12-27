@@ -17,6 +17,20 @@ void display(Node *head){
 		temp=temp->next;
 	}
 }
+Node *addAtPos(int pos,int data){
+	Node*newNode=new Node(data);
+	Node*temp1=head;
+	Node *temp2=head->next;
+	pos--;
+	while(pos>1){
+		temp1=temp1->next;
+	temp2=temp2->next;
+	pos--;	
+	}	
+	temp1=temp1->next;
+	temp2=temp2->next;
+	pos--;
+}
 int main(){
 	Node *first=new Node(10);
 	Node *second=new Node(20);
@@ -28,4 +42,5 @@ int main(){
     head->next->next=third;
 	head->next->next->next=fourth;
 	head->next->next->next->next=fifth;
+	display(head);
 }
