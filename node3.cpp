@@ -46,9 +46,12 @@ int main(){
 	Node*fifth=new Node(50);
     Node *head=first;
     head->next=second;
-    head->next->next=third;
-    head->next->next->next=fourth;
-    head->next->next->next->next=fifth;
+//    head->next->next=third;
+second->next=third;
+third->next=fourth;
+fourth->next=fifth;
+//    head->next->next->next=fourth;
+//    head->next->next->next->next=fifth;
     cout<<"Print Data Of Singly Linked List\n";
     display(head);
     addAtPos(head,5,23);

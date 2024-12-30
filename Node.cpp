@@ -24,5 +24,3 @@ int main()
 	cout << "\n"
 		 << head->data << "==>" << head->next->data << "==>" << head->next->next->data;
 }
-
-""
