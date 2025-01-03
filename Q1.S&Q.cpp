@@ -38,5 +38,6 @@ int main(){
 	head->next=second;
 	second->next=third;
 	display(head);
+	display(head);
 
 }
