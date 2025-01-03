@@ -18,19 +18,6 @@ void display(Node *head){
 	}
 	cout<<"\n";
 }
-int pop(){
-	int r=-1;
-	int data;
-	if(data==-1){
-		cout<<"\nStack is Underflow";
-		return r;
-	}
-	else{
-		r=head->data;
-		top--;
-	}
-	return r;
-}
 int main(){
 Node*first=new Node(10);
 Node*second=new Node(20);
