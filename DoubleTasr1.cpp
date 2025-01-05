@@ -74,11 +74,11 @@ Node *addNodeAtEnd(Node *tail,int data){
 	}
 	else{
 		tail->next=newNode;
-		tail=newNode;
-		tail->prev=newNode;		
+        tail=tail->next;
+		tail=newNode;		
 	}
-	 return tail; 
   cout<<"\nNode added"; 
+  	return tail; 
     
 }
 //Node *addNodeAtEnd(Node *head,int data){
@@ -108,12 +108,11 @@ Node *deleteFirstNode(Node *head){
 	return head;
 }
 Node *deleteLastNode(Node *tail){
-	tail=tail->next;
+	if(tail->next=NULL){
 	delete tail; 
-	
+	tail=tail->prev;    		
+	}
     return tail;
-
-
 }
 
 int main(){
@@ -132,28 +131,22 @@ f3->next=f4;
 f4->prev=f3;
 Node*head=f1;
 Node*tail=f4;
-
+f4->next=tail;
+tail->next=NULL;
 printForward(head);
 head=addNodeAtStart(head,5);
-
+//printBackward(tail);
 //printForward(head);
 cout<<"\nData added at start of the Doubly Linked List";
-printBackward(tail);
 printForward(head);
 addNodeAtEnd(tail,50);
 cout<<"\nData added at the End Of the doubly Linked List";
-printBackward(tail);
 printForward(head);
-
-//addNodeAtPos(head,2,100);
-//printForward(head);
 head=deleteFirstNode(head);
-cout<<"\nDelete First Node\n";
+cout<<"\n\nDelete First Node";
 printForward(head);
-tail=deleteLastNode(tail);
-cout<<"\nDelete Last Node\n";
+deleteLastNode(tail);
+cout<<"\n\nDelete Last Node";
 printForward(head);
-printBackward(tail);
-
 }
 
