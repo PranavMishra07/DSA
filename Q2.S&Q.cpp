@@ -18,13 +18,7 @@ void display(Node *head){
 	}
 	cout<<"\n";
 }
-Node *backward(Node *head){
-	Node *temp=head;
-	int count=0;
-    for(temp=0;temp=NULL;temp++){
-    	count++;
-	}
-	cout<<count;
+void backward(){
 
 }
 int main(){
@@ -39,7 +33,7 @@ second->next=third;
 third->next=fourth;
 
 display(head);
-backward(head);
+backward();
 display(head);
 }
 
