@@ -110,10 +110,19 @@ Node *deleteFirstNode(Node *head){
 Node *deleteLastNode(Node *tail){
 	if(tail->next=NULL){
 	delete tail; 
-	tail=tail->prev;    		
 	}
     return tail;
 }
+void deleteNodeAtPos(Node *head,int pos){
+     	 pos--;
+     while(pos>1){
+	 head=head->next;    
+        head->prev=head;
+        pos--;
+	 }
+delete head;
+
+		}
 
 int main(){
 Node *f1=new Node(10);
@@ -131,11 +140,11 @@ f3->next=f4;
 f4->prev=f3;
 Node*head=f1;
 Node*tail=f4;
-f4->next=tail;
-tail->next=NULL;
+//f4->next=tail;
+//tail->next=NULL;
 printForward(head);
+printBackward(tail);
 head=addNodeAtStart(head,5);
-//printBackward(tail);
 //printForward(head);
 cout<<"\nData added at start of the Doubly Linked List";
 printForward(head);
@@ -147,6 +156,8 @@ cout<<"\n\nDelete First Node";
 printForward(head);
 deleteLastNode(tail);
 cout<<"\n\nDelete Last Node";
+printForward(head);
+deleteNodeAtPos(head,2);
 printForward(head);
 }
 

@@ -18,6 +18,15 @@ void display(Node *head){
 	}
 	cout<<"\n";
 }
+Node *backward(Node *head){
+	Node *temp=head;
+	int count=0;
+    for(temp=0;temp=NULL;temp++){
+    	count++;
+	}
+	cout<<count;
+
+}
 int main(){
 Node*first=new Node(10);
 Node*second=new Node(20);
@@ -30,8 +39,7 @@ second->next=third;
 third->next=fourth;
 
 display(head);
-reverce(head);
-pop();
-
+backward(head);
+display(head);
 }
 
