@@ -11,12 +11,8 @@ int main(){
 		x+=10;
 	}
 	for (int i=0;i<10;i++){
-	
-	cout<<"\nData at the Position "<<i<<" "<<arr[i]<<" "<<&arr<<endl;
 //	cout<<"\nData at the Position "<<i<<" "<<arr[i]<<" "<<&arr[i]<<endl;
 //	cout<<"\nData at the Position "<<i<<" "<<arr[i]<<" "<<p<<endl;
-
-
 	}
 
 }
