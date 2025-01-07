@@ -2,7 +2,7 @@
 using namespace std;
 int main(){
 	
-	int arr[10];
+	int arr[10];    
 	int x=10;
 	int *p;
 	p=arr;
@@ -12,9 +12,9 @@ int main(){
 	}
 	for (int i=0;i<10;i++){
 	
-//	cout<<"\nData at the Position "<<i<<" "<<arr[i]<<" "<<arr<<endl;
+	cout<<"\nData at the Position "<<i<<" "<<arr[i]<<" "<<&arr<<endl;
 //	cout<<"\nData at the Position "<<i<<" "<<arr[i]<<" "<<&arr[i]<<endl;
-	cout<<"\nData at the Position "<<i<<" "<<arr[i]<<" "<<p<<endl;
+//	cout<<"\nData at the Position "<<i<<" "<<arr[i]<<" "<<p<<endl;
 
 
 	}

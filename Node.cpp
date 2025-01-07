@@ -12,7 +12,7 @@ public:
 		cout << "\nNode created";
 	}
 };
-int main()
+d int main()
 {
 	Node *first = new Node(10);
 	Node *second = new Node(20);
