@@ -1,3 +1,4 @@
+//addData At The End of the Array 
 #include<iostream>
 using namespace std;
 int arr[100];

@@ -61,7 +61,7 @@ int main(){
 	addfirst(n);
 
 	addLast(n);
-cout<<"\nData Added At the Specific Position : ";
+    cout<<"\nData Added At the Specific Position : ";
 	addPos(2,9,n);
 }
 
