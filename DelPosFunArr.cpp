@@ -4,7 +4,7 @@ void delPosData(int arr[],int s){
 	
 	int pos=1;
 	while(pos!=0){
-		cout<<"Size : "<<s-1;
+		cout<<"\nSize : "<<s-1;
 	cout<<"\nEnter Position To delete Data : ";
 	cin>>pos;
 	if(pos<0){
@@ -13,6 +13,7 @@ void delPosData(int arr[],int s){
 	}
 	else if(pos>s){
 		cout<<"Position is not Found";
+		continue;
 	}
     else if(pos>=0){
 	for(int i=pos;i<s;i++){

@@ -20,11 +20,11 @@ else if(pos>=0){
 	for(int i=pos;i<s;i++){
 		arr[i]=arr[i+1];
 	}
+//    s--;             
 	for(int i=0;i<s-1;i++){
 		cout<<arr[i]<<" ";
 	}
 	cout<<endl;
-    s--;           
 }
 
 }
