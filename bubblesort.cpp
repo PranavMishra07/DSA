@@ -1,10 +1,15 @@
+//
 #include<iostream>
 using namespace std;
-int BinSearch(int arr[],int s,int key){
+int BinSearch(int arr[],int s){
 	int low,high,mid;
 	low=0;
 	high=s-1;
-	while(low<=high){
+int key ;
+        cout<<"\nSize : "<<s<<endl;
+		cout<<"Enter Key To find : ";
+        cin>>key;
+      	while(low<=high){
 		mid=(low+high)/2;
 		if(arr[mid]==key){
 			return mid;
@@ -15,7 +20,8 @@ int BinSearch(int arr[],int s,int key){
 		else{
 			high=mid-1;
 		}
-	}
+	
+}
 	return -1;
 }
 int main(){
@@ -36,11 +42,13 @@ for(int i=0;i<s;i++){   // go through the array
 cout<<"\nAfter Sorting : ";
 for(int i=0;i<s;i++)  cout<<arr[i]<<" ";
 cout<<endl;
-int key ;
-cout<<"\nSize : "<<s<<endl;
-cout<<"Enter Key To find : ";
-cin>>key;
-int x=BinSearch(arr,s,key);
+//int key ;
+//cout<<"\nSize : "<<s<<endl;
+//cout<<"Enter Key To find : ";
+//cin>>key;
+int x =BinSearch(arr,s);
 cout<<x;
+int y =BinSearch(arr,s);
+cout<<y;
 }
 
