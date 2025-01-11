@@ -1,6 +1,10 @@
+//split array in two Part
 #include<iostream>
 using namespace std;
-int splitArr(int arr[],int s,int pos){
+int splitArr(int arr[],int s){
+	int pos =0;
+	cout<<"Enter Position to split array : ";
+	cin>>pos;
 	int ls=0,rs=0;
 	ls=pos;
 	rs=s-ls;
@@ -46,10 +50,11 @@ int main(){
 	cout<<"Array After Sorting : ";
 	for(int i=0;i<s;i++) cout<<arr[i]<<" ";
 	cout<<endl;
-	int pos =0;
-	cout<<"Enter Position to split array : ";
-	cin>>pos;
-	splitArr(arr,s,pos);
+//	int pos =0;
+//	cout<<"Enter Position to split array : ";
+//	cin>>pos;
+	splitArr(arr,s);
+	splitArr(arr,s);
 }
 
 
