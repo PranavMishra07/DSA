@@ -31,13 +31,13 @@ void display(){
 
 int main(){
 push(10);
-push(20);
+push(20);push(30);
 display();
-push(30);
+
 push(40);
 push(50);
 push(60);
-push(70);
+
 display();
 }
 
